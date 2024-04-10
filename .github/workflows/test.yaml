@@ -29,3 +29,4 @@ jobs:
     - name: print
       run: |
         mvn assembly:single docker:build
+        docker images
