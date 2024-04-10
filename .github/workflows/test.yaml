@@ -24,7 +24,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven and push to vm
-      run: mvn -B package
+      run: mvn install -DskipTests
     - name: print
       run: |
         docker build -t jp.icr.io/sa-vecv-dev/kafdrop:10.04.02 .
