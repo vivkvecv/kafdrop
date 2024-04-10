@@ -28,8 +28,7 @@ jobs:
       run: mvn clean package
     - name: print
       run: |
-        mvn assembly:single docker:build
-        docker tag obsidiandynamics/kafdrop:latest jp.icr.io/sa-vecv-dev/kafdrop:10.04.01
+        docker build -t jp.icr.io/sa-vecv-dev/kafdrop:10.04.01 .
         docker images
     - name: Login to IKS
       run: |
