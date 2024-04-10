@@ -59,4 +59,4 @@ ARGS="--add-opens=java.base/sun.nio.ch=ALL-UNNAMED -Xss256K \
      $HEAP_ARGS \
      $JVM_OPTS"
 
-exec java $ARGS -jar /kafdrop*/kafdrop*jar ${CMD_ARGS}
+exec java $ARGS -jar /kafdrop*/kafdrop*jar ${CMD_ARGS} --kafka.brokerConnect=kafka-2-mh-kqlwvrlcrnwrslgvkwpf.private.jp-tok.messagehub.appdomain.cloud:9093,kafka-0-mh-kqlwvrlcrnwrslgvkwpf.private.jp-tok.messagehub.appdomain.cloud:9093,kafka-1-mh-kqlwvrlcrnwrslgvkwpf.private.jp-tok.messagehub.appdomain.cloud:9093
