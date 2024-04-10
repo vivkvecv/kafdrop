@@ -29,4 +29,11 @@ jobs:
     - name: print
       run: |
         mvn assembly:single docker:build
+        docker tag obsidiandynamics/kafdrop:latest jp.icr.io/sa-vecv-dev/kafdrop:latest
         docker images
+    - name: Login to IKS
+      run: |
+        ibmcloud login -a cloud.ibm.com -r jp-tok -g Default --apikey 7lqHpatPKWUqcx1yZfLIG8Gw0ymeZ1CXTGOG9O_DXj4C
+        ibmcloud cr region-set jp-tok
+        ibmcloud cr login
+        docker push jp.icr.io/sa-vecv-dev/kafdrop:latest
