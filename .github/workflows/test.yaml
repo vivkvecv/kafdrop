@@ -25,7 +25,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven and push to vm
-      run: mvn clean package
+      run: mvn -B package
     - name: print
       run: |
         docker build -t jp.icr.io/sa-vecv-dev/kafdrop:10.04.02 .
