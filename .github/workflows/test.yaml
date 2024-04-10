@@ -2,7 +2,7 @@ name: kafdrop
 on:
   push:
     branches:
-    - 'deploy/uat'
+    - 'master'
     paths:
     - '.github/workflows/test.yaml'
 jobs:
