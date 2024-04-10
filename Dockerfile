@@ -5,7 +5,8 @@ EXPOSE 9000
 RUN mkdir /kafka/
 WORKDIR /kafka/
 COPY *.* /kafka/
-COPY kafdrop/target/kafdrop-4.0.2-SNAPSHOT.jar /kafka/target/
+RUN ls 
+COPY */kafdrop/target/kafdrop-4.0.2-SNAPSHOT.jar /kafka/target/
 RUN ls 
 RUN cd target
 RUN ls
