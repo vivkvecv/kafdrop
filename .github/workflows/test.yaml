@@ -27,7 +27,7 @@ jobs:
       run: mvn install -DskipTests
     - name: print
       run: |
-        docker build -t jp.icr.io/sa-vecv-dev/kafdrop:10.04.02 .
+        docker build -t jp.icr.io/sa-vecv-dev/kafdrop:12.04.01 .
         docker images
     - name: Login to IKS
       run: |
