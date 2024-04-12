@@ -27,7 +27,7 @@ jobs:
       run: mvn install -DskipTests
     - name: print
       run: |
-        docker build -t jp.icr.io/sa-vecv-dev/kafdrop:12.04.01 .
+        docker build -t jp.icr.io/sa-vecv-dev/kafdrop:12.04.02 .
         docker images
     - name: Login to IKS
       run: |
@@ -39,4 +39,4 @@ jobs:
         ibmcloud login -a cloud.ibm.com -r jp-tok -g Default --apikey 7lqHpatPKWUqcx1yZfLIG8Gw0ymeZ1CXTGOG9O_DXj4C
         ibmcloud cr region-set jp-tok
         ibmcloud cr login
-        docker push jp.icr.io/sa-vecv-dev/kafdrop:12.04.01
+        docker push jp.icr.io/sa-vecv-dev/kafdrop:12.04.02
