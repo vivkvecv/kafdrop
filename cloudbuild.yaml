@@ -10,7 +10,7 @@ steps:
       - 'compute'
       - 'scp'
       - '--recurse'
-      - '*.*'
+      - './'
       - 'vivkdeep@test:/home/vivkdeep/'
       - '--zone' 
       - 'asia-south1-a'
