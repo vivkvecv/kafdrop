@@ -6,7 +6,7 @@ steps:
       - 'scp'
       - '--recurse'
       - './'
-      - 'test:/home/vivkdeep/'
+      - 'vivkdeep@test:/home/vivkdeep/'
       - '--zone' 
       - 'asia-south1-a'
       
