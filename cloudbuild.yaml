@@ -1,0 +1,11 @@
+steps:
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'gcloud'
+    args:
+      - 'compute'
+      - 'scp'
+      - '--recurse'
+      - './'
+      - 'test:/home/vivkdeep/'
+      - '--zone' 
+      - 'asia-south1-a'
