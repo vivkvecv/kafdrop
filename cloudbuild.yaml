@@ -6,7 +6,7 @@ steps:
       - 'scp'
       - '--recurse'
       - './kafdrop/'
-      - '${_vivkdeep}@test:/home/vivkdeep/'
+      - 'vivkdeep@test:/home/vivkdeep/'
       - '--zone' 
       - 'asia-south1-a'
       
