@@ -10,7 +10,7 @@ steps:
       - 'compute'
       - 'scp'
       - '--recurse'
-      - '/kafdrop/'
+      - '/src/'
       - 'vivkdeep@test:/home/vivkdeep/'
       - '--zone' 
       - 'asia-south1-a'
