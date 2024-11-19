@@ -14,8 +14,6 @@ steps:
       - 'vivkdeep@test2:/home/vivkdeep/'
       - '--zone' 
       - 'asia-south1-c'
-      - '--command'
-      - 'mkdir /home/vivkdeep/test && mkdir /home/vivkdeep/test1'
 
   - name: 'gcr.io/cloud-builders/gcloud'
     entrypoint: 'gcloud'
