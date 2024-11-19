@@ -16,6 +16,17 @@ steps:
       - 'asia-south1-c'
       - '--command'
       - 'mkdir /home/vivkdeep/test && mkdir /home/vivkdeep/test1'
+
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'gcloud'
+    args:
+      - 'compute'
+      - 'ssh'
+      - 'vivkdeep@test2'
+      - '--zone' 
+      - 'asia-south1-c'
+      - '--command'
+      - 'mkdir /home/vivkdeep/test && mkdir /home/vivkdeep/test1'
       
 options:
   logging: CLOUD_LOGGING_ONLY
