@@ -14,6 +14,8 @@ steps:
       - 'vivkdeep@test2:/home/vivkdeep/'
       - '--zone' 
       - 'asia-south1-c'
+      - '--project'
+      - 'my-second-project-442218'
 
   - name: 'gcr.io/cloud-builders/gcloud'
     entrypoint: 'gcloud'
@@ -23,6 +25,8 @@ steps:
       - 'vivkdeep@test2'
       - '--zone' 
       - 'asia-south1-c'
+      - '--project'
+      - 'my-second-project-442218'
       - '--command'
       - 'mkdir /home/vivkdeep/test && mkdir /home/vivkdeep/test1'
       
