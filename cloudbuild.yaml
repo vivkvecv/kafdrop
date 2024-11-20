@@ -1,4 +1,11 @@
 steps:    
+  - name: 'gcr.io/cloud-builders/bash'
+    args:
+      - '-c'
+      - |
+        echo "Listing files in the current directory:"
+        ls -la
+        
   - name: 'gcr.io/cloud-builders/gcloud'
     entrypoint: 'gcloud'
     args:
