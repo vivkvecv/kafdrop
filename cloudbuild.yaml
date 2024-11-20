@@ -5,8 +5,8 @@ steps:
       - 'compute'
       - 'scp'
       - '--recurse'
-      - './src/'
-      - 'vivkdeep@test2:/home/vivkdeep/test1'
+      - './'
+      - 'vivkdeep@test2:/home/vivkdeep/test'
       - '--zone' 
       - 'asia-south1-c'
       - '--project'
@@ -23,7 +23,7 @@ steps:
       - '--project'
       - 'my-second-project-442218'
       - '--command'
-      - 'mkdir /home/vivkdeep/test && mkdir /home/vivkdeep/test2'
+      - 'mkdir /home/vivkdeep/test2 && mkdir /home/vivkdeep/test3'
       
 options:
   logging: CLOUD_LOGGING_ONLY
