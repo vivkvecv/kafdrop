@@ -5,6 +5,7 @@ steps:
       - '-c'
       - |
         echo "Listing files in the current directory:"
+        pwd
         ls -la
         
   - name: 'gcr.io/cloud-builders/gcloud'
