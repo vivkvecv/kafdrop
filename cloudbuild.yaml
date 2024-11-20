@@ -5,7 +5,7 @@ steps:
       - 'compute'
       - 'scp'
       - '--recurse'
-      - '/workspace/.git/kafdrop/src/'
+      - './src/'
       - 'vivkdeep@test2:/home/vivkdeep/test1'
       - '--zone' 
       - 'asia-south1-c'
