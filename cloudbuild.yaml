@@ -14,7 +14,7 @@ steps:
       - 'compute'
       - 'scp'
       - '--recurse'
-      - '/workspace/'
+      - '/workspace/*'
       - 'vivkdeep@test2:/home/vivkdeep/test'
       - '--zone' 
       - 'asia-south1-c'
